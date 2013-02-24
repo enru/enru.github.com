@@ -1,24 +1,44 @@
-h1.fontface {font: 60px/68px 'RobotoRegular', Arial, sans-serif;letter-spacing: 0;}
-
-p.style1 {font: 18px/27px 'RobotoRegular', Arial, sans-serif;}
-p.style2 {font: 18px/27px 'RobotoItalic', Arial, sans-serif;}
-p.style3 {font: 18px/27px 'RobotoBold', Arial, sans-serif;}
-p.style4 {font: 18px/27px 'RobotoBoldItalic', Arial, sans-serif;}
-p.style5 {font: 18px/27px 'RobotoCondensed', Arial, sans-serif;}
-p.style6 {font: 18px/27px 'RobotoCondensedItalic', Arial, sans-serif;}
-p.style7 {font: 18px/27px 'RobotoBoldCondensed', Arial, sans-serif;}
-p.style8 {font: 18px/27px 'RobotoBoldCondensedItalic', Arial, sans-serif;}
-p.style9 {font: 18px/27px 'RobotoThin', Arial, sans-serif;}
-p.style10 {font: 18px/27px 'RobotoThinItalic', Arial, sans-serif;}
-p.style11 {font: 18px/27px 'RobotoLight', Arial, sans-serif;}
-p.style12 {font: 18px/27px 'RobotoLightItalic', Arial, sans-serif;}
-p.style13 {font: 18px/27px 'RobotoMedium', Arial, sans-serif;}
-p.style14 {font: 18px/27px 'RobotoMediumItalic', Arial, sans-serif;}
-p.style15 {font: 18px/27px 'RobotoBlack', Arial, sans-serif;}
-p.style16 {font: 18px/27px 'RobotoBlackItalic', Arial, sans-serif;}
-
-#container {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+    .default .footer { display: none; }
 }
+body .wrap #head,
+body .wrap #belly,
+body .wrap #foot { padding: 1em; }
+
+body .wrap #head { position: relative; }
+body .wrap #belly { margin: 0 auto; width: 50%; }
+body .wrap #foot { position: absolute; bottom: 0; right: 0; }
+
+@font-face {
+    font-family: 'PatuaOneRegular';
+    src: url('font/PatuaOne-Regular-webfont.eot');
+    src: url('font/PatuaOne-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/PatuaOne-Regular-webfont.woff') format('woff'),
+         url('font/PatuaOne-Regular-webfont.ttf') format('truetype'),
+         url('font/PatuaOne-Regular-webfont.svg#PatuaOneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    background: #0a0a0a;
+    color: #fafafa;
+    font-family: PatuaOneRegular, Tahoma,Verdana,sans-serif;
+    font-size: 1.5em;
+}
+a, a:link { color: orange !important; text-decoration: none; }
+h1,h2 { text-transform: uppercase; color: #60ee60; }
+h1 { font-size: 2em; margin: 0; }
+code { 
+    font-weight: bold; 
+    background-color: lightgrey;
+    color: #0a0a0a;
+    padding: 4px;
+}
+p { margin: 10px 0; line-height: 1.5; font-size: 1.5em;}
+li { font-size: 1.5em; margin-bottom: 5px; }
+.syntaxhighlighter {  padding: 0.5em !important; }
+ol.twelve-factor { margin-left: 50px; }
+ul.buildpacks li { line-height: 2.5; }
+h1.title { font-size: 4em; }
