@@ -8,8 +8,8 @@ body .wrap #belly,
 body .wrap #foot { padding: 1em; }
 
 body .wrap #head { position: relative; }
-body .wrap #belly { margin: 0 auto; width: 50%; }
-body .wrap #foot { position: absolute; bottom: 0; right: 0; }
+body .wrap #belly { margin: 0 auto; padding: 0 1em 1em; width: 50%; }
+body .wrap #foot { text-align: right; }
 
 @font-face {
     font-family: 'PatuaOneRegular';
@@ -37,6 +37,7 @@ code {
     padding: 4px;
 }
 p { margin: 10px 0; line-height: 1.5; font-size: 1.5em;}
+#belly p { font-size: .75em; }
 li { font-size: 1.5em; margin-bottom: 5px; }
 .syntaxhighlighter {  padding: 0.5em !important; }
 ol.twelve-factor { margin-left: 50px; }
